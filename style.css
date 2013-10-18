@@ -139,7 +139,7 @@ i {
 	display: inline-block;
 	text-decoration: inherit;
 	margin: 10px 5px 0 0;
-	color: green;
+	color: #222;
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before .footer {
@@ -173,10 +173,6 @@ h3 [class^="icon-"]:before, [class*=" icon-"]:before {
 
 .data_year {
 	float: right;
-}
-
-.footer a {
-	color: black;
 }
 
 .footer {
