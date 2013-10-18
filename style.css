@@ -42,13 +42,13 @@ i {
 	font-family: 'PT Serif', serif;
 	font-size: 2.5em;
 	margin: 0;
-	line-height: 0.5em;
+	line-height: 0.8em;
 	border-bottom: 4px double #ccc;
 	color: #F6B491;
 }
 
 .wrapper h1 small {
-	font-size: 0.8em;
+	font-size: 0.5em;
 	color: #EC8D87;
 	letter-spacing: 0.1em;
 }
