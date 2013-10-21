@@ -18,6 +18,16 @@ body {
 	color: black;
 }
 
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
 a {
 	text-decoration: none;
 	color: grey;
@@ -60,7 +70,7 @@ i {
 }
 
 .wrapper h3 {
-	clear: both;
+	/*clear: both;*/
 	color: #E1E2A2;
 }
 
