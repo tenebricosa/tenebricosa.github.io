@@ -22,7 +22,7 @@ module.exports = {
 	entry: [
 		`webpack-dev-server/client?http://${host}:${port}`,
 		`webpack/hot/only-dev-server`,
-		`./src/index.jsx` // entry point
+		`./src/index.js` // entry point
 	],
 	devtool: process.env.WEBPACK_DEVTOOL || 'cheap-module-source-map',
 	output: {
@@ -52,7 +52,8 @@ module.exports = {
 		new webpack.NoErrorsPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
-			template: './src/template.html'
-		}),
+			template: './src/template.html',
+			title: 'Анастасия Сахарова'
+		})
 	]
 };
