@@ -8,13 +8,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const host = process.env.HOST || "127.0.0.1";
 const port = process.env.PORT || "8888";
 
+// global css
+loaders.push({
+	test: /[\/\\](node_modules|global)[\/\\].*\.css$/,
+	loaders: [
+		'style?sourceMap',
+		'css?sourceMap'
+	]
+});
+
 // local scss modules
 loaders.push({
 	test: /[\/\\]src[\/\\].*\.scss/,
 	loaders: [
 		'style?sourceMap',
-		'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
-		'sass'
+		'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]&sourceMap',
+		'sass?sourceMap'
 	]
 });
 
